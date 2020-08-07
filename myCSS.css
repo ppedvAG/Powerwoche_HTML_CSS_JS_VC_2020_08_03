@@ -1,0 +1,15 @@
+.textcontainer{
+    background-color: aqua;
+    height: 200px;
+    width: 50%;
+}
+
+.innerdiv{
+    height: 50%;
+    background-color: chartreuse;
+}
+
+footer{
+    height: 50%; /* funktioniert nicht! % wovon?? */
+    background-color: darkviolet;
+}
