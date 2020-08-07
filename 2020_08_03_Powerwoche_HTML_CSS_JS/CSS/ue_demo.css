@@ -1,0 +1,18 @@
+.flex-container{
+    padding: 50px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+
+.flex-item{
+    height: 200px;
+    width: 200px;
+    background-color: darkorange;
+}
+
+/* 
+#demo01:hover{
+    background-color: darkorchid;
+} */

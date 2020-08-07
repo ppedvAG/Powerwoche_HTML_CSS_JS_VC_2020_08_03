@@ -1,0 +1,50 @@
+html{
+    font-family: 'Josefin Slab', Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+body{
+    background-color: beige;
+
+
+
+
+    /* background-color: chartreuse; */ /* das würde den ersten Wert überschreiben */
+
+}
+
+
+/* Typselektoren */
+p{
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Klassenselektor (class selector)*/
+.my-first-test-class{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: dodgerblue;
+}
+
+/* .test-bg{
+    background-color: chartreuse;
+} */
+
+.test-div{
+    background-color: cadetblue;
+    width: 400px;
+    height: 20px;
+}
+
+
+/* ID-Selektor */
+#my-first-id{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}

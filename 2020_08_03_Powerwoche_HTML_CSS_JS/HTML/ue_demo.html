@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ue_demo.css">
+    <title>Demo</title>
+</head>
+<body>
+
+    <div class="flex-container" id="flex-container">
+        <div id="demo01" class="flex-item"></div>
+        <div id="demo02" class="flex-item"></div>
+        <div id="demo03" class="flex-item"></div>
+    </div>
+    <button id="btn-hide">Hide!</button>
+    <button id="btn-show">Show!</button>
+
+    <script>
+        var demo01 = document.getElementById('demo01');
+        var demo02 = document.getElementById('demo02');
+        var demo03 = document.getElementById('demo03');
+        var btnHide = document.getElementById('btn-hide');
+        var btnShow = document.getElementById('btn-show');
+
+        function setBgRed(){
+            demo01.style.backgroundColor = 'rgb(255, 0, 0)';
+        }
+
+
+        demo01.addEventListener('click', setBgRed);
+
+        function setBgPurple(){
+            demo01.style.backgroundColor = 'purple';
+        }
+
+        function resetBgColor(){
+            demo01.style.backgroundColor = 'darkorange';
+        }
+
+        demo01.addEventListener('mouseover', setBgPurple);
+        demo01.addEventListener('mouseout', resetBgColor);
+
+        function hideDiv(){
+            demo02.style.display = 'none';
+        }
+
+        function showDiv(){
+            demo02.style.display = 'block';
+        }
+
+        btnHide.addEventListener('click', hideDiv);
+        btnShow.addEventListener('click', showDiv);
+
+    </script>
+    
+</body>
+</html>

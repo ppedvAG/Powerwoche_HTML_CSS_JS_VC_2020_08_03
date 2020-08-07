@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schleifen</title>
+</head>
+
+<body>
+    <button id="btn-ok">OK</button>
+    <div id="demo"></div>
+
+    <script>
+        var demo = document.getElementById('demo');
+        var text = '';
+
+
+        /* WHILE-Schleife */
+
+        // var i = 0; 
+        /* Zähler auf Englisch "iterator" */
+        /* muss nicht so heißen, wird aber sehr oft für Zähler verwendet */
+
+        /* while(i < 10){
+            // text = text + 'a'; // Kurzschreibweise:
+            // text += 'a';
+            text += 'Wert: ' + i + '<br>';
+            // i = i + 1; // Kurzschreibweise:
+            i++;  // wichtig! Hochzählen, sonst Endlosschleife!
+        } */
+
+
+
+        /* FOR Schleife */
+
+        /*
+        for(var i = 9; i > -1; i--){
+            text += 'Wert: ' + i + '<br>';
+        }
+
+
+        demo.innerHTML = text;
+        */
+
+
+        /* Schleife in Funktion verpackt (wird auf Button-Klick ausgeführt) */
+        var btnOk = document.getElementById('btn-ok');
+
+        function textInsert() {
+
+            for (var i = 0; i < 10; i++) {
+                text += 'Wert: ' + i + '<br>';
+            }
+
+            demo.innerHTML = text;
+        }
+
+        btnOk.addEventListener('click', textInsert);
+
+
+
+    </script>
+</body>
+
+</html>

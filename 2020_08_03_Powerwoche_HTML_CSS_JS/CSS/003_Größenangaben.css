@@ -1,0 +1,70 @@
+html{
+    font-size: 14px;
+}
+
+
+.test-class-01{
+    height: 150px;
+    background-color: darkblue;
+}
+.test-class-02{
+    height: 150px;
+    width: 50%;
+    background-color: rgb(62, 62, 185);
+
+}
+
+.inner-div{
+    height: 70px;
+    width: 50%;
+    background-color: chartreuse;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4.5vw;
+}
+
+.test-class-03{
+    font-size: 24px;
+    height: 150px;
+    width: 50em;
+    background-color: rgb(128, 128, 226);
+}
+.test-class-04{
+    height: 150px;
+    width: 50rem;
+    background-color: rgb(172, 172, 243);
+
+}
+.test-class-05{
+    height: 10vh;
+    /* vh steht für viewport height */
+    background-color: rgb(212, 212, 253);
+
+}
+
+.test-class-06{
+    height: 150px;
+    background-color: darkblue;
+    width: 100%;
+}
+.test-class-07{
+    height: 150px;
+    width: 100vw;
+    /* vw steht für viewport width */
+    background-color: rgb(62, 62, 185);
+
+}
+
+
+/* 
+    px - Ausgabepunkt (Pixel)
+    em, rem - orientiert sich an Schriftgröße (Referenzwert setzen!)
+    vh - viewport height (100vh = 100% der Höhe des aktuellen Ausgabebildschirmes)
+    vw - viewport width (100vw = 100% der Breite des aktuellen Ausgabebildschirmes
+                            Achtung bei vw: berücksichtigt NICHT Abstände oder
+                            Browserscrollbalken - 100vw verursacht normalerweise
+                            einen horizontalen Scrollbalken, weil das Element breiter
+                            wird, als der zur Verfügung stehende Platz)
+    % - Prozent (bezieht sich auf das Containerelement)
+
+*/
+

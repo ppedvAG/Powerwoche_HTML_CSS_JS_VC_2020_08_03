@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+.main-header{
+    background-color: forestgreen;
+    height: 150px;
+}
+
+.main-nav{
+    background-color: gold;
+    height: 90px;
+}
+
+.main-content{
+    background-color: grey;
+    padding: 35px 50px 0px;
+    border-bottom: 1px solid grey;
+}
+
+
+.text-container{
+    background-color: lightskyblue;
+    padding: 15px;
+    border: 2px solid rgb(15, 109, 168);
+    margin-bottom: 35px;
+}
+
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td, th{
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+
+th{
+    background-color: darkblue;
+    color: white;
+}
+
+td{
+    background-color: rgb(194, 194, 229);
+}
+
+.main-footer{
+    background-color: lightblue;
+    height: 100px;
+}
+
+
+.textbox, .img-container{
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.demo-img{
+    width: 100%;
+    display: block;
+}
+
+.clearboth{
+    clear: both;
+}
+
+.float-container{
+    /* border: 2px solid blueviolet; */
+}
+
+.demo-block1, .demo-block2{
+    float: left;
+    padding: 25px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.demo-block1{
+    /* background-color: cadetblue; */
+}
+
+.demo-block2{
+    /* background-color: darkcyan; */
+}
+
+.img-box{
+    /* border: 2px solid green; */
+    float: left;
+    padding: 25px;
+    width: 33.333%;
+    box-sizing: border-box;
+}
+
+.img-demo{
+    width: 100%;
+    display: block;
+}
+
+.flex-container{
+    background-color: lightskyblue;
+    padding: 50px;
+    border: 2px solid rgb(15, 109, 168);
+    margin-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-textbox{
+    width: 48%;
+    padding: 0 25px 50px;
+    /* border: 2px solid rgb(15, 109, 168); */
+    /* border-radius: 10px; */
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.flex-img-container-50{
+    width: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.flex-img-container-33{
+    width: 33.333%;
+    padding: 25px;
+    box-sizing: border-box;
+    /* border: 2px solid green; */
+}
+
+
+figure{
+    margin: 0;
+}
+
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+}

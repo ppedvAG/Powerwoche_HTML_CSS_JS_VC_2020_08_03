@@ -1,0 +1,64 @@
+.form-demo1{
+    border: 2px solid darkcyan;
+    padding: 50px;
+    /* width: 400px; */
+    /* box-sizing: border-box; */
+    /* text-align: right; */
+}
+
+.inp-container{
+    /* border: 2px solid darkcyan; */
+    margin-bottom: 10px;
+}
+
+.inp-demo{
+    /* padding: 10px; */
+    /* margin-left: 50px; */
+}
+
+.lbl-demo1{
+    display: inline;
+    background-color: darkcyan;
+    width: 100px;
+}
+
+.form-demo2{
+    border: 2px solid darkviolet;
+    padding: 50px;
+    /* width: 400px; */
+    /* box-sizing: border-box; */
+    /* text-align: right; */
+}
+
+
+.lbl-demo2{
+    display: block;
+    background-color: darkviolet;
+    width: 100px;
+}
+
+
+.form-demo3{
+    border: 2px solid chartreuse;
+    padding: 50px;
+    /* width: 400px; */
+    /* box-sizing: border-box; */
+    /* text-align: right; */
+}
+
+
+.lbl-demo3{
+    display: inline-block;
+    /* background-color: chartreuse; */
+    width: 100px;
+}
+
+textarea{
+    resize: none;/* 
+    width: 400px; */
+}
+
+/* 
+fieldset{
+    border: none;
+} */

@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding-bottom: 200px;
+}
+
+.box01{
+    height: 150px;
+    background-color: darkblue;
+}
+
+.box02{
+    height: 150px;
+    width: 30%;
+    background-color: rgb(59, 59, 187);
+}
+
+.box03{
+    height: 150px;
+    width: 30%;
+    background-color: rgb(136, 136, 212);
+}
+
+.box04{
+    /* height: 150px; */
+    background-color: rgb(211, 211, 247);
+}
+
+.demo-span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: darkorange;
+}
+
+.demo-inline{
+    height: 150px;
+    width: 150px;
+    background-color: darkturquoise;
+    border: 2px solid cadetblue;
+    display: inline-block;
+}
+
+.img-container{
+    width: 250px;
+    border: 1px solid red;
+    padding: 1px;
+    background-color: red;
+}
+
+.demo-img{
+    width: 100%;
+    display: block;
+}

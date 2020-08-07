@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>einfache Funktionen</title>
+    <style>
+        .demo1{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="demo1" class="demo1" onclick="setBgRed();"></div>
+    <button id="btn-ok">OK</button>
+    <button id="btn-insert" onclick="insertText();">Insert</button>
+    <div id="demo2">Dieser Text steht von Anfang an hier.</div>
+
+
+    <script>
+
+        var demo1 = document.getElementById('demo1');
+
+        /* setBgRed setzt bei Klick auf div die Hintergrundfarbe auf rot */
+        function setBgRed(){
+            demo1.style.backgroundColor = 'rgb(255, 0, 0)';
+        }
+
+        /* function call (Funktionsaufruf) */
+        /* setBgRed(); */
+
+
+        function setBgYellow(){
+
+            demo1.style.backgroundColor = 'Yellow';
+
+        }
+
+        function insertText(){
+            /* demo1.innerHTML = '<p>' + 'Hallo Testtext.' + '</p>'; */
+            demo1.innerHTML = 'Hallo Testtext.';
+        }
+
+        /* document.getElementById('btn-insert').addEventListener('click', insertText); */
+
+
+        /* 
+        // mit "anonymer" Funktion: sie hat keinen Namen, weil sie direkt ausgeführt wird
+        document.getElementById('btn-ok').addEventListener('click', function(){
+            demo1.style.backgroundColor = "blue";
+        }); 
+        */
+
+        // mit function call (Funktionsaufruf): eine Funktion, die es schon gibt,
+        // wird auf ein Klick-Event hin ausgeführt
+        document.getElementById('btn-ok').addEventListener('click', setBgYellow);
+
+
+
+
+
+        /* globale Variable */
+        var nettoPreis = 125.00;
+
+        function bruttoRechner(netto){
+            /* lokale Variable */
+            var brutto = netto * 1.19;
+            return brutto;
+        }
+
+        
+
+
+        var bruttoPreis = bruttoRechner(nettoPreis);
+
+
+        console.log('Der Bruttopreis ist ' + bruttoPreis);
+
+
+
+
+    </script>
+</body>
+</html>

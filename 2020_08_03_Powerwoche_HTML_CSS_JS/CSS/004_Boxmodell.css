@@ -1,0 +1,107 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color: lightgoldenrodyellow;
+}
+
+.box01{
+    height: 100px;
+    width: 100px;
+    background-color: indigo;
+    margin: 10px;
+}
+
+.box02{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(115, 45, 165);
+    padding: 10px;
+}
+
+.box03{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(150, 88, 194);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box04{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(183, 140, 214);
+    border-width: 10px;
+    border-style: solid;
+    border-color: lightblue;
+}
+
+.box05{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(215, 189, 235);
+    border: 10px solid lightblue;
+    padding: 10px;
+}
+
+.box06{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(236, 224, 245);
+    
+    border: 10px solid lightblue;
+    box-sizing: border-box;
+}
+.box07{
+    height: 100px;
+    width: 100px;
+    background-color: indigo;
+}
+
+.box08{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(115, 45, 165);
+    border: 10px solid lightblue;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.box09{
+    height: 100px;
+    width: 100px;
+    background-color: indigo;
+    padding-left: 20px;
+}
+.box10{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(115, 45, 165);
+    padding: 5px 0 20px 10px;
+}
+.box11{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(183, 140, 214);
+    padding: 5px 25px 20px 10px;
+    
+    /* padding: 5px 20px; */
+    /* box-sizing: border-box; */
+}
+
+.innerdiv{
+    background-color: chartreuse;
+    height: 100%;
+    width: 100%;
+}
+
+.box12{
+    font-size: 16px;
+    color: black;
+    width: 100px;
+    background-color: rgb(150, 88, 194);
+    border: 10px solid lightblue;
+    box-sizing: border-box;
+    padding: 10px;
+    /* hyphens: auto; */
+}

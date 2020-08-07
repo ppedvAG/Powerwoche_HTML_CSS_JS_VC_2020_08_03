@@ -1,0 +1,56 @@
+body{
+    /* background-color: red; */
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.demo01{
+    background-color: slateblue;
+}
+.demo02{
+    background-color: rgb(106, 90, 205);
+                    /*  r     g        b      */
+                    /*  red   green    blue   */
+                    /*  0     0        0      = black */
+                    /*  255   255      255    = white */
+                    /*  79    79       79     = grey (dunkel) */
+}
+
+
+.demo03{
+    background-color: #6a5acd;
+                    /*    r g b    */
+                    /*             */
+                    /*   0123456789 a  b  c  d  e  f           */
+                    /*              10 11 12 13 14 15          */
+                    /*    6*16^1 + 10*16^0                     */
+}
+
+.demo04{
+    background-color: rgba(105, 90, 205, 0.3);
+    /*  Transparenz zwischen 1 und 0 */
+    /* 0 = vollständig transparent */
+    /* 1 = undurchsichtig, Vollfarbe */
+}
+
+.demo05{
+    background-color: rgba(105, 90, 205, 0);
+}
+
+.demo06{
+    background-color: chartreuse;
+    opacity: 0.3;
+}
+
+.demo07{
+    /* visibility: hidden; */
+    visibility: visible;
+}
+
+.demo08{
+    display: none;
+}

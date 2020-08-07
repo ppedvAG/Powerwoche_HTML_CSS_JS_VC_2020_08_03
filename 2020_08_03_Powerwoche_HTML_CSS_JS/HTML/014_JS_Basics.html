@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+    <link rel="stylesheet" href="../CSS/ue_formular.css">
+    <script src="../JS/myTestJS.js" defer></script><!-- src, NICHT href - Dateipfad zum JS-File -->
+</head>
+
+<body>
+
+    <div id="demo1"></div>
+
+
+
+    <script>
+        /* mehrzeilige
+            Kommentare
+        */
+
+        // einzeilige Kommentare
+
+
+        /* in JS können wir Kommentare auch verschachteln */
+        /* einzeilige in mehrzeilige */
+        /* 
+                lkj
+                lkjlkj
+            // lkjlkjlkj
+                lkjlkj
+        */
+
+
+
+
+
+        /* Variablen */
+
+        /* Variablendeklaration */
+
+        var x;
+        var text;
+        var firstName;
+
+        var y, z, fullName;
+
+
+        /* Initialisierung */
+
+        x = 5;
+
+        firstName = 'James';
+
+
+        /* beides gemeinsam */
+        var lastName = 'Bond';
+
+        fullName = firstName + ' ' + lastName;
+
+        y = 8;
+
+        z = x + y;
+
+
+        /* console.log(fullName); */
+        console.log('Wert von z = ' + z);
+
+        x = x * 3;
+        // 15
+
+        console.log('Wert von x = ' + x);
+
+        x = x + 5;
+        console.log('Wert von x = ' + x);
+
+        /* Konstanten */
+        const MwSt = 0.19;
+
+        /* Operatoren */
+        /* arithmetische Operatoren */
+        /* 
+            +, -, *, /
+            %........... Modulus
+            ++..... increment
+            --..... decrement
+        */
+
+        x = x + 1;
+        console.log(x);
+
+        x++;
+        console.log(x);
+
+        x = x - 1;
+        console.log(x);
+
+        x--;
+        console.log(x);
+
+
+        /* Zuweisungsoperatoren */
+        /* 
+            =, +=, -=, *=, /=
+        */
+
+        x = x + 3;
+        console.log(x);
+
+        x += 3;
+        console.log(x);
+
+
+        /* Vergleichsoperatoren */
+        /* 
+            ==..... entspricht dem Wert?
+            ===.... gleicher Wert UND gleicher Datentyp?
+            !=..... entspricht NICHT dem Wert?
+            !==.... Datentyp wird auch überprüft
+            <, >, <=, >=
+        
+        */
+
+        console.log(x == 5); // false
+
+        console.log(x == 26); // true
+
+        console.log(x != 26); // false
+
+
+        var m = 5;
+        var n = '5';
+
+
+        console.log(m == n);  // true!
+        console.log(m === n); // false
+
+        /* Logische Operatoren */
+
+        /* 
+            &&...... AND (und)
+            ||...... OR (oder)
+            !....... NOT (nicht)
+        */
+
+
+        /* Datentypen */
+        /* 
+            number (sämtliche Zahlen)
+            5
+            -5
+            5.3 (englische Schreibweise! Kommazahl mit Punkt!)
+            3.3333333333333333333333333333333333333333333333
+            123e5........ 12300000 (Exponentialschreibweise)
+            123e-5....... 0.00123
+
+
+            String (Text)
+            'Text'
+            "Text"
+            "das ist ein 'Text'"
+            'das ist ein "Text"'
+
+            boolean
+            true/false
+
+            object (Objekt)
+   
+        
+         */
+
+        var demo1 = document.getElementById('demo1');
+
+
+        /* document.getElementById('demo1').innerHTML = '<p>' +  'Hallo!' + '</p>'; */
+
+        demo1.innerHTML = '<p>' + 'Hallo ihr da!' + '</p>';
+
+        text = 'Mein Name ist ';
+
+        /* text = text + fullName; */
+        /* oder Kurzschreibweise: */
+        text += fullName;
+
+        /* text = text + '.'; */
+        /* oder Kurzschreibweise: */
+        text += '.';
+
+        console.log(text);
+
+        demo1.style.color = 'rgb(0, 255, 0)';
+        demo1.style.backgroundColor = 'rgb(190, 190, 190)';
+
+
+    </script>
+</body>
+
+</html>

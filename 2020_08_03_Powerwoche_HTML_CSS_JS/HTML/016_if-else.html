@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ue_demo.css">
+    <title>if-else</title>
+</head>
+
+<body>
+
+    <div class="flex-container" id="flex-container">
+        <div id="demo01" class="flex-item"></div>
+        <div id="demo02" class="flex-item"></div>
+        <div id="demo03" class="flex-item">
+            <input id="inp-demo" name="inp-great-name" class="my-class" type="text">
+            <p id="p-demo">Hintergrundfarbe</p>
+            <button id="btn-ok">OK</button>
+
+        </div>
+    </div>
+
+    <script>
+        var demo03 = document.getElementById('demo03');
+        var inpDemo = document.getElementById('inp-demo');
+        var pDemo = document.getElementById('p-demo');
+        var btnOk = document.getElementById('btn-ok');
+
+        /* var x; */
+        /* 
+                if(x == 5){
+                    alert('Der Wert von x ist 5!');
+                }
+                else if(x < 5){
+                    alert('Der Wert von x ist kleiner als 5!');
+                }
+                else if(x > 5){
+                    alert('Der Wert von x ist 8!');
+                }
+                else{
+                    alert('Fehlermeldung!');
+                } 
+        */
+
+
+
+
+        function testInput() {
+            /* alert('Funktioniert!'); */
+            var inp = inpDemo.value;
+
+            if (parseInt(inp) === 5) {
+                /* grün */
+                demo03.style.backgroundColor = 'rgb(0, 255, 0)';
+                pDemo.innerHTML = 'Grün!';
+
+                /*   
+                    if(){
+                        if(){
+    
+                        }
+                    }
+                    else{} 
+                */
+            }
+            else if (inp < 5) {
+                /* rot */
+                demo03.style.backgroundColor = 'rgb(255, 0, 0)';
+                pDemo.innerHTML = 'Rot!';
+            }
+            else if (inp > 5) {
+                /* blau */
+                demo03.style.backgroundColor = 'rgb(0, 0, 255)';
+                pDemo.innerHTML = 'Blau!';
+            }
+            else {
+                /* gelb */
+                demo03.style.backgroundColor = 'rgb(255, 255, 0)';
+                pDemo.innerHTML = 'Gelb!';
+            }
+
+
+        }
+
+
+        btnOk.addEventListener('click', testInput);
+
+
+
+        /* Kurzschreibweise, um ja/nein Bedingungen abzufragen: */
+        
+        var x = 5;
+        var y = 5;
+
+        /* (x == y) ? alert('Stimmt!') : alert('Stimmt nicht!'); */
+
+        /* NaN steht für Not a Number */
+        // console.log(isNaN(x));
+        // x == "" // Leerstring
+
+
+    </script>
+
+</body>
+
+</html>

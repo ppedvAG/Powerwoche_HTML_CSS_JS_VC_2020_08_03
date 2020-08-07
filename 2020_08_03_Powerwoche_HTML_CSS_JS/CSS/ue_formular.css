@@ -1,0 +1,44 @@
+.form-demo3{
+    width: 45%;
+    /* border: 2px solid darkslategrey; */
+    background-color: darkslategrey;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 50px;
+    color: whitesmoke;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.inp-container{
+    margin-bottom: 1em;
+}
+
+.lbl-demo3{
+    display: inline-block;
+    width: 8em;
+    /* border-bottom: 1px solid whitesmoke; */
+}
+
+.inp-demo{
+    display: inline-block;
+    padding: .3em 1em;
+    border-radius: 3em;
+    width: 15em;
+    background-color: whitesmoke;
+}
+
+.inp-color{
+    display: inline-block;
+    padding: .3em 1em;
+    border-radius: 3em;
+}
+
+.inp-button{
+    padding: .3em 1em;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 3em;
+    display: inline-block;
+    margin-top: 1em;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <button id="btn-text">Textausgabe</button>
+    <button id="btn-addFruit">Hinzufügen</button>
+    <button id="btn-deleteFruit">Letzte Löschen</button>
+    <button id="btn-splice">Splice</button>
+    <button id="btn-combine">Kombinieren</button>
+    <div id="demo"></div>
+
+    <script>
+        var btnText = document.getElementById('btn-text');
+        var btnAdd = document.getElementById('btn-addFruit');
+        var demoDiv = document.getElementById('demo');
+        var btnDelete = document.getElementById('btn-deleteFruit');
+        var btnSplice = document.getElementById('btn-splice');
+        var btnCombine = document.getElementById('btn-combine');
+
+        var x = 5;
+
+        var fruitSalad = ['Banane', 'Apfel', 'Kiwi'];
+        // Stelle            0         1        2
+        // length            1         2        3
+
+/* 
+        for(var i = 0; i < fruitSalad.length; i++){
+            // toller Code
+        } 
+        
+*/
+
+        /* Textausgabe von den Elementen, die sich im Array befinden: */
+        /* join: wodurch sollen die einzelnen Einträge in der Textausgabe getrennt werden */
+        function insertText(){
+            demoDiv.innerHTML = fruitSalad.join(', ');
+        }
+        
+        /* wenn wir auf diesen Button clicken, geben wir den Inhalt des Arrays fruitSalad als Textausgabe aus */
+        btnText.addEventListener('click', insertText);
+
+        /* wir fügen dem Array ein Element hinzu mit push: */
+        function addFruit(){
+            fruitSalad.push('Mango');
+            demoDiv.innerHTML += '<br/>' + fruitSalad.join(', ');
+        }
+
+        btnAdd.addEventListener('click', addFruit);
+
+        /* wir löschen das letzte Element aus dem Array weg mit pop: */
+        function deleteLast(){
+            fruitSalad.pop();
+            demoDiv.innerHTML += '<br/>' + fruitSalad.join(', ');
+        }
+
+        btnDelete.addEventListener('click', deleteLast);
+
+        /* wir können Elemente an bestimmten Stellen einfügen und/oder weglöschen */
+        function spliceFruit(){
+            fruitSalad.splice(1, 0, 'Kirsche', 'Birne');
+            demoDiv.innerHTML += '<br/>' + fruitSalad.join(', ');
+        }
+
+        /* 
+            1..... an welcher Stelle soll eingefügt/gelöscht werden?
+            0..... wieviele Elemente sollen von dieser Stelle ausgehend gelöscht werden?
+            'Kirsche', 'Birne'..... was soll eingefügt werden (optional)
+        */
+
+        btnSplice.addEventListener('click', spliceFruit);
+
+        /* 
+            wenn an der ersten Stelle etwas weggelöscht oder eingefügt werden soll:
+            myArray.shift();
+            myArray.unshift();
+        
+        */
+
+
+        var citrusFruits = ['Orange', 'Limette', 'Kumquat'];
+        var allFruits;
+
+        function combineArrays(){
+            allFruits = fruitSalad.concat(citrusFruits); // concat = "concatenate", zusammenführen
+            allFruits.sort(); // in alphabetischer Reihenfolge anordnen
+            demoDiv.innerHTML += '<br/>' + allFruits.join(', ');
+        }
+
+        btnCombine.addEventListener('click', combineArrays);
+
+
+        console.log(fruitSalad[0]); // Banane, das erste Element im Array (an der Stelle 0)
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

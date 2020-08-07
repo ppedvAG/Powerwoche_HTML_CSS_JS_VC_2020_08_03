@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/011_Bilder.css">
+    <title>Bilder</title>
+</head>
+
+<body>
+    <div class="img-container">
+        <img class="img-demo" src="../images/eisvogel.jpg" alt="Eisvogel">
+    </div>
+
+    <div class="img-container2">
+        <img class="img-demo2" src="../images/eisvogel.jpg" alt="Eisvogel">
+    </div>
+
+    
+    <div class="img-container3">
+        <img class="img-demo3" src="../images/eisvogel.jpg" alt="Eisvogel">
+    </div>
+
+    <div class="img-container">
+        <figure>
+            <img class="img-demo" src="../images/eisvogel.jpg" alt="Eisvogel">
+            <figcaption>Eisvogel auf einem Ast</figcaption>
+        </figure>
+    </div>
+    <picture>
+        <source srcset="../images/eisvogel_s.jpg" media="(max-width: 600px)">
+        <source srcset="../images/eisvogel_m.jpg" media="(max-width: 1000px)">
+        <source srcset="../images/eisvogel_l.jpg" media="(max-width: 1200px)">
+        <img src="../images/eisvogel.jpg" alt="Eisvogel">
+    </picture>
+    <picture>
+        <source srcset="../images/eisvogel.jpg" media="(max-width: 600px)">
+        <source srcset="../images/castle.jpg" media="(max-width: 1000px)">
+        <source srcset="../images/japanesecastle.jpg" media="(max-width: 1200px)">
+        <img src="../images/error.jpg" alt="error">
+    </picture>
+
+
+</body>
+
+</html>

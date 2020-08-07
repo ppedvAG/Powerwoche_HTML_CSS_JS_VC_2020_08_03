@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+.float-container{
+    background-color: cadetblue;
+    /* border: 5px solid red; */
+}
+
+.demo-float{
+    height: 150px;
+    width: 150px;
+    background-color: cornflowerblue;
+    border: 2px solid cyan;
+    float: left;
+    margin: 5px;
+}
+
+.clearboth{
+    clear: both;
+}
+
+.inline-container{
+    background-color: limegreen;
+}
+
+.demo-inline{
+    height: 150px;
+    width: 150px;
+    background-color: lawngreen;
+    border: 2px solid darkgreen;
+    display: inline-block;
+}

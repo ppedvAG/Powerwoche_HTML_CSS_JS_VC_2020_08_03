@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+.main-header{
+    background-color: steelblue;
+    font-family: Impact, fantasy;
+    font-size: 45px;
+    color: white;
+    padding: .5em;
+}
+
+.main-nav{
+    background-color: rgb(118, 168, 209);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* 
+.clearboth{
+    clear: both;
+} */
+
+ul::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+li{
+    float: left;
+    /* background-color: green; */
+}
+
+a{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    /* background-color: red; */
+    padding: 10px 25px;
+}
+
+a:hover{
+    background-color: white;
+    color: rgb(118, 168, 209);
+    /* border-bottom: 2px solid rgb(118, 168, 209); */
+}
+
